@@ -1,13 +1,16 @@
 while True:
-    figura = input('Введите фигуру расчёта площади: ')
+    figura = input('Введите фигуру для расчёта S и P: ')
     if (figura == "прямоугольник") or (figura == 'ghzvjeujkmybr'):
         one = float(input('Размер первой стороны: '))
         two = float(input('Размер второй стороны: '))
-        print(one * two)
+        print("S =", one * two)
+        print("P =", (one + two) * 2)
+        print("Для отключения программы введите: стоп/stop")
     elif figura == '[]':
         one = float(input('Размер первой стороны: '))
-        two = float(input('Размер пторой стороны: '))
-        print(one * two)
+        two = float(input('Размер второй стороны: '))
+        print("S =", one * two)
+        print("P =", (one + two) * 2)
     elif (figura == 'stop') or (figura == 'стоп'):
         print('Работа завершена!')
         break
